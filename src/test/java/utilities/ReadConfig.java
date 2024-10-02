@@ -47,4 +47,40 @@ public class ReadConfig {
 	  String password = pro.getProperty("password");
 	  return password;
 	}
+	
+	public String getfirstName() {
+		String fname =pro.getProperty("firstname");
+		return fname;
+	}
+	public String getlastName() {
+	String lname=pro.getProperty("lastname");
+	return lname;
+	}
+	
+	public String getDOB() {
+		String dob=pro.getProperty("dd mm yy");
+				return dob;
+				
+	}
+	
+	public String getAge() {
+		String age=pro.getProperty("age");
+		return age;
+	}
+	public String getAddress() {
+		String address=pro.getProperty("adr");
+				return address;
+	}
+	public String getNumber() {
+		String number=pro.getProperty("no");
+		return number;
+	}
+	public String getAilment() {
+		String ailment=pro.getProperty("patientAilment");
+		return ailment;
+	}
+	public String getType() {
+		String type=pro.getProperty("patienttype");
+		return type;
+	}
 }

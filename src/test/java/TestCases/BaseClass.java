@@ -18,8 +18,18 @@ public class BaseClass {
 	 String Url = readconfig.getApplicationURL() ;
 	 String username =readconfig.getUsername();
 	 String password =readconfig.getPassword();
-	
-	
+	 
+	 String firstname=readconfig.getfirstName();
+	 String lastname=readconfig.getlastName();
+	 String dob=readconfig.getDOB();
+	 String age=readconfig.getAge();
+	 String address=readconfig.getAddress();
+	 String number=readconfig.getNumber();
+	 String ailment=readconfig.getAilment();
+	 String type=readconfig.getType();
+
+
+
 	 static WebDriver driver;
 	
 	@BeforeClass

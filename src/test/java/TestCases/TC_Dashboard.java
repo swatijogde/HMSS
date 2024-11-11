@@ -17,9 +17,15 @@ public class TC_Dashboard extends BaseClass {
 		
 		
 		Dashboard db = new Dashboard(driver);
-		db.clickPatient();
+		db.clickPatients();
 		db.registerPatient();
+		db.viewPatients();
+		//db.clickOnView();
+		db.managePatients();
+		db.patientTransfer();
 		
+		db.employee();
+		db.addEmployee();
 	}
 	
 	

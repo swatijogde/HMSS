@@ -17,7 +17,7 @@ WebDriver ldriver;
 	
 	// identify username webelement
 	
-	@FindBy(id="emailaddress") 
+	@FindBy(name="ad_email") 
 	WebElement userName;
 	
 	// identify password webelement

@@ -10,8 +10,8 @@ import PageObject.RegisterPatients;
 public class TC_Register extends BaseClass {
 
 
-	@Test(priority=06)
-	public void loginTest1() {
+	@Test
+	public void registerPatient() {
 
 		LoginPage lp = new LoginPage(driver);
 		lp.setUsername(username);
@@ -20,23 +20,20 @@ public class TC_Register extends BaseClass {
 		
 		
 		Dashboard db = new Dashboard(driver);
-		db.clickPatient();
+		db.clickPatients();
 		db.registerPatient();
-}
 
-     @Test
-     public void registerPatient() {
-    	 
-    	 RegisterPatients rs = new RegisterPatients(driver);
-    	 rs.setFirstName(firstname);
-    	 rs.setLastName(lastname);
-		rs.setpatientDOB(dd mm yy);
+		RegisterPatients rs = new RegisterPatients(driver);
+    	rs.setFirstName(firstname);
+    	rs.setLastName(lastname);
+		rs.setpatientDOB(dob);
 		rs.setAge(age);
     	rs.setAddress(address);
-    	rs.setPhone(number);
+    	rs.setPhone(phone);
     	rs.setAilment(ailment);
     	rs.setType(1);
     	 
      }
-	
+    
 }
+	

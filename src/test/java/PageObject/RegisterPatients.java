@@ -49,21 +49,20 @@ public class RegisterPatients {
 	public void setLastName(String lname) {
 		lastname.sendKeys(lname);
 	}
-	public void setpatientDOB(String dd,String mm,String yy ) {
-		dob.sendKeys(dd);
-		dob.sendKeys(mm);
-		dob.sendKeys(yy);
+		public void setpatientDOB(String dob2) {
+
+		dob.sendKeys(dob2);
 	}
 	public void setAge(String x) {
 		
 		age.sendKeys(String.valueOf(x));
 	}
-	public void setAddress(String adr) {
-		address.sendKeys(adr);
+	public void setAddress(String addr) {
+		address.sendKeys(addr);
 		
 	}
-	public void setPhone(String no) {
-		phone.sendKeys(no);
+	public void setPhone(String number) {
+		phone.sendKeys(number);
 	}
 	public void setAilment(String type) {
 		ailment.sendKeys(type);
@@ -76,6 +75,7 @@ public class RegisterPatients {
 	public void clickAddPatientButton() {
 		addPatientButton.click();
 	}
+	
 	
 
 }
